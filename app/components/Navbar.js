@@ -10,10 +10,10 @@ export default function Navbar() {
   const pathname = usePathname()
 
   const navItems = [
-    { label: 'Beranda', href: '/RentalDay/' },
-    { label: 'Daftar Unit', href: '/RentalDay/DaftarUnit' },
-    { label: 'Testimoni', href: '/RentalDay/Testimoni' },
-    { label: 'Kontak', href: '/RentalDay/Kontak' },
+    { label: 'Beranda', href: '/' },
+    { label: 'Daftar Unit', href: '/DaftarUnit' },
+    { label: 'Testimoni', href: '/Testimoni' },
+    { label: 'Kontak', href: '/Kontak' },
   ]
 
   return (

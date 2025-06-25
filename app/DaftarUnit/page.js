@@ -1,8 +1,8 @@
 "use client";
 
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import CardUnit from '../../components/CardUnit/CardUnit';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import CardUnit from '../components/CardUnit/CardUnit';
 
 export default function DaftarUnit() {
   const units = [

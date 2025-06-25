@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+
 
 const Kontak = () => {
   const [form, setForm] = useState({
@@ -133,77 +134,57 @@ const Kontak = () => {
         </div>
       </section>
 
-<section className="bg-[url('/images/RD-bg_kontakkami.png')] bg-cover bg-center py-12 px-4 text-white">
-  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2">
+    <section className="bg-[url('/images/RD-bg_kontakkami.png')] bg-cover bg-center py-12 px-4 text-white min-h-[400px] flex items-center justify-center">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
     
-    {/* BANDUNG */}
-    <div className="flex flex-col items-center w-full">
-      <div className="bg-red-700 text-white py-3 w-full text-lg font-bold text-center">
-        Bandung
-      </div>
-      <div className="bg-transparent py-4 shadow-md space-y-4 w-full flex flex-col items-center">
-        <a
-          href="https://wa.me/6285829764860"
-          target="_blank"
-          className="flex items-center gap-3 w-full max-w-xs p-2 bg-white rounded-xl text-green-700 font-semibold shadow hover:shadow-lg transition"
-        >
-          <img src="/images/logos_whatsapp-icon.png" className="h-5" />
-          WhatsApp
-        </a>
-        {/* <a
-          href="https://www.tiktok.com"
-          target="_blank"
-          className="flex items-center gap-3 w-full max-w-xs p-2 bg-white rounded-xl text-black font-semibold shadow hover:shadow-lg transition"
-        >
-          <img src="/images/logos_tiktok-icon.png" className="h-5" />
-          TikTok
-        </a> */}
-        <a
-          href="https://www.instagram.com/dahliaquranissiva"
-          target="_blank"
-          className="flex items-center gap-3 w-full max-w-xs p-2 bg-white rounded-xl text-pink-500 font-semibold shadow hover:shadow-lg transition"
-        >
-          <img src="/images/logos_instagram-icon.png" className="h-5" />
-          Instagram
-        </a>
-      </div>
+    {/* Kiri: Judul */}
+    <div className="text-center md:text-left">
+      <h2 className="text-3xl sm:text-4xl font-bold leading-tight">
+        Mari Kunjungi Sosial<br />Media Pixelnesia
+      </h2>
     </div>
 
-    {/* BALI */}
-    <div className="flex flex-col items-center w-full">
-      <div className="bg-red-700 text-white py-3 w-full text-lg font-bold text-center">
-        Bali
-      </div>
-      <div className="bg-transparent py-4 shadow-md space-y-4 w-full flex flex-col items-center">
-        <a
-          href="https://wa.me/6285829764860"
-          target="_blank"
-          className="flex items-center gap-3 w-full max-w-xs p-2 bg-white rounded-xl text-green-700 font-semibold shadow hover:shadow-lg transition"
-        >
+    {/* Kanan: Tombol Sosmed */}
+    <div className="flex flex-col items-center md:items-start gap-4">
+      <a
+        href="https://wa.me/6285829764860"
+        target="_blank"
+        className="flex items-center justify-between gap-3 w-full max-w-xs p-3 bg-white rounded-xl text-green-700 font-semibold shadow hover:shadow-lg transition"
+      >
+        <div className="flex items-center gap-3">
           <img src="/images/logos_whatsapp-icon.png" className="h-5" />
           WhatsApp
-        </a>
-        {/* <a
-          href="https://www.tiktok.com"
-          target="_blank"
-          className="flex items-center gap-3 w-full max-w-xs p-2 bg-white rounded-xl text-black font-semibold shadow hover:shadow-lg transition"
-        >
+        </div>
+        <span className="text-green-700">&#9660;</span>
+      </a>
+
+      <a
+        href="https://www.tiktok.com"
+        target="_blank"
+        className="flex items-center justify-between gap-3 w-full max-w-xs p-3 bg-white rounded-xl text-black font-semibold shadow hover:shadow-lg transition"
+      >
+        <div className="flex items-center gap-3">
           <img src="/images/logos_tiktok-icon.png" className="h-5" />
           TikTok
-        </a> */}
-        <a
-          href="https://www.instagram.com/dahliaquranissiva"
-          target="_blank"
-          className="flex items-center gap-3 w-full max-w-xs p-2 bg-white rounded-xl text-pink-500 font-semibold shadow hover:shadow-lg transition"
-        >
+        </div>
+        <span className="text-black">&#9660;</span>
+      </a>
+
+      <a
+        href="https://www.instagram.com/dahliaquranissiva"
+        target="_blank"
+        className="flex items-center justify-between gap-3 w-full max-w-xs p-3 bg-white rounded-xl text-pink-500 font-semibold shadow hover:shadow-lg transition"
+      >
+        <div className="flex items-center gap-3">
           <img src="/images/logos_instagram-icon.png" className="h-5" />
           Instagram
-        </a>
-      </div>
+        </div>
+        <span className="text-pink-500">&#9660;</span>
+      </a>
     </div>
+
   </div>
 </section>
-
 
       <Footer />
     </div>
