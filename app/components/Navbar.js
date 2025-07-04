@@ -17,7 +17,7 @@ export default function Navbar() {
   ]
 
   return (
-    <div className="bg-yellow-300 px-4 md:px-10 py-3 shadow-md">
+    <div className="bg-yellow-300 px-4 md:px-10 py-3 shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center gap-2">
@@ -26,16 +26,16 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex gap-6 items-center">
+        <nav className="hidden md:flex gap-4 items-center relative">
           {navItems.map((item) => {
             const isActive = pathname.toLowerCase() === item.href.toLowerCase()
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`px-3 py-1 rounded-md text-sm font-semibold ${
+                className={`px-4 py-2 text-sm font-semibold transition-all ${
                   isActive
-                    ? 'bg-white text-red-600 shadow'
+                    ? 'bg-white text-red-600 rounded-b-xl shadow-md -mt-4'
                     : 'text-black hover:text-red-600'
                 }`}
               >
@@ -54,7 +54,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu Dropdown */}
+      {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden mt-2 bg-yellow-200 px-4 py-2 rounded-md shadow-md">
           {navItems.map((item) => {

@@ -30,7 +30,7 @@ export default function HomePage() {
               kompetitif dan proses cepat hanya pada <br />
               layanan kami.
             </p>
-            <div className="mt-6 flex justify-center md:justify-end gap-4 flex-wrap">
+            <div className="mt-6 flex justify-center md:justify-end gap-1 flex-wrap">
               <a
                 href="/unit"
                 className="bg-white text-red-600 px-6 py-2 rounded-l-full shadow hover:bg-gray-100"
@@ -90,22 +90,28 @@ export default function HomePage() {
       </section>
 
       {/* Kenapa Harus Memilih */}
-      <section className="bg-red-600 text-white px-6 py-12 md:px-16">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-6">
-          <div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 leading-tight">
-              Kenapa Harus Memilih <br /> Rentalday?
-            </h2>
-            <div className="flex flex-col gap-4">
-              {[
+     <section className="bg-[#B40000] text-black px-6 py-12 md:px-8">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div>
+      <h2 className="text-2xl sm:text-3xl md:text-4xl text-white font-bold mb-6 leading-tight">
+        Kenapa Harus Memilih <br /> Rentalday?
+      </h2>
+      {/* tabel isi  */}
+      <div className="flex flex-col gap-4">
+        {[
                 ['icon-perawatan.png', 'Perawatan Motor Rutin Secara Berkala'],
                 ['icon-motorbaru.png', 'Menyediakan Unit Motor Keluaran Terbaru'],
                 ['icon-pembayaran.png', 'Metode Pembayaran Aman dan Profesional']
               ].map(([icon, text], i) => (
-                <div key={i} className="bg-white text-black p-4 rounded shadow flex items-center gap-4 min-h-[80px] w-full">
-                  <img src={`/images/${icon}`} className="w-10 h-10" />
-                  <p className="font-semibold text-sm sm:text-base">{text}</p>
-                </div>
+                <div
+            key={i}
+            className="bg-white text-black p-4 rounded shadow flex items-center gap-4 h-[110px] w-full max-w-[520px]"
+          >
+            <img src={`/images/${icon}`} className="w-12 h-12 object-contain" />
+            <p className="text-lg font-semibold sm:text-xl md:text-2xl leading-snug">
+              {text}
+            </p>
+          </div>
               ))}
             </div>
           </div>
@@ -116,10 +122,15 @@ export default function HomePage() {
               ['icon-layanan.png', 'Layanan Antar Jemput (COD) Fleksibel'],
               ['icon-data.png', 'Data Pribadi Pelanggan Terjamin Aman']
             ].map(([icon, text], i) => (
-              <div key={i} className="bg-white text-black p-4 rounded shadow flex items-center gap-4 min-h-[80px] w-full">
-                <img src={`/images/${icon}`} className="w-10 h-10" />
-                <p className="font-semibold text-sm sm:text-base">{text}</p>
-              </div>
+              <div
+            key={i}
+            className="bg-white text-black p-4 rounded shadow flex items-center gap-4 h-[110px] w-full max-w-[520px]"
+          >
+            <img src={`/images/${icon}`} className="w-12 h-12 object-contain" />
+            <p className="text-lg font-semibold sm:text-xl md:text-2xl leading-snug">
+              {text}
+            </p>
+          </div>
             ))}
           </div>
         </div>
