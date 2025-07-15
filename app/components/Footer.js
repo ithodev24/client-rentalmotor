@@ -44,7 +44,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-gray-800 mb-2">Halaman</h4>
             <ul className="space-y-1">
-              <li><a href="/" className="hover:text-yellow-500">Beranda</a></li>
+              <li><a href="/ " className="hover:text-yellow-500">Beranda</a></li>
               <li><a href="/DaftarUnit" className="hover:text-yellow-500">Daftar Motor</a></li>
               <li><a href="/Testimoni" className="hover:text-yellow-500">Testimoni</a></li>
               <li><a href="/Kontak" className="hover:text-yellow-500">Kontak</a></li>
@@ -66,8 +66,8 @@ export default function Footer() {
             </p>
             <p className="text-xs text-gray-600">Bandung</p>
             <p>
-              <a href="tel:+628xxxxxxxxx" className="hover:text-yellow-500">
-                (+62) 8...-...-....
+              <a href="tel:+62887825171899" className="hover:text-yellow-500">
+                (+62) 878-2517-1899
               </a>
             </p>
             <p className="text-xs text-gray-600">Bali</p>
