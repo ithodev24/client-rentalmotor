@@ -7,7 +7,7 @@ export default function Footer() {
       <img
         src="/images/kontakkiri.png"
         alt="Flower Top Left"
-        className="absolute top-[-78px] left-0 w-140 z-0"
+        className="absolute top-[-58px] left-0 w-140 z-0"
       />
 
       {/* Ornamen bunga kanan bawah */}
@@ -23,9 +23,24 @@ export default function Footer() {
         <div className="flex flex-col items-start gap-6">
           {/* Ikon Media Sosial */}
           <div className="flex space-x-4">
-            <a href="#"><img src="/images/icon_fb.png" alt="Facebook" className="w-7 h-7" /></a>
-            <a href="#"><img src="/images/icon_tt.png" alt="TikTok" className="w-8 h-8" /></a>
-            <a href="#"><img src="/images/icon_wa.png" alt="WhatsApp" className="w-7 h-7" /></a>
+            {/* <a href="#"><img src="/images/icon_fb.png" alt="Facebook" className="w-7 h-7" /></a> */}
+            {/* tiktok */}
+            <a
+              href="https://www.tiktok.com/@bandungrider?_t=ZS-8yJWY2aXeWm&_r=1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/images/icon_tt.png" alt="Instagram" className="w-8 h-8" />
+            </a>
+
+            {/* WhatsApp */}
+            <a
+              href="https://wa.me/6285724785060"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/images/icon_wa.png" alt="WhatsApp" className="w-7 h-7" />
+            </a>
           </div>
 
           {/* Logo Bank */}
@@ -45,6 +60,7 @@ export default function Footer() {
             <h4 className="font-semibold text-gray-800 mb-2">Halaman</h4>
             <ul className="space-y-1">
               <li><a href="/ " className="hover:text-yellow-500">Beranda</a></li>
+              <li><a href="/artikel" className="hover:text-yellow-500">Artikel</a></li>
               <li><a href="/DaftarUnit" className="hover:text-yellow-500">Daftar Motor</a></li>
               <li><a href="/Testimoni" className="hover:text-yellow-500">Testimoni</a></li>
               <li><a href="/Kontak" className="hover:text-yellow-500">Kontak</a></li>
@@ -55,8 +71,8 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-gray-800 mb-2">Kontak Kami</h4>
             <p className="mb-1">
-              <a href="mailto:ptdahliglobalindo@gmail.com" className="hover:text-yellow-500">
-                ptdahliglobalindo@gmail.com
+              <a href="mailto:rentaldaybandung@gmail.com" className="hover:text-yellow-500">
+                rentaldaybandung@gmail.com
               </a>
             </p>
             <p>
@@ -64,13 +80,13 @@ export default function Footer() {
                 (+62) 857-2478-5060
               </a>
             </p>
-            <p className="text-xs text-gray-600">Bandung</p>
+            <p className="text-xs text-gray-600">Admin 1</p>
             <p>
               <a href="tel:+62887825171899" className="hover:text-yellow-500">
                 (+62) 878-2517-1899
               </a>
             </p>
-            <p className="text-xs text-gray-600">Bali</p>
+            <p className="text-xs text-gray-600">Admin 2</p>
           </div>
         </div>
 
@@ -89,14 +105,14 @@ export default function Footer() {
               Kec. Cicendo, Kota Bandung, Jawa Barat 40171, Indonesia
             </a>
           </p>
+          
         </div>
       </div>
 
       {/* Copyright */}
-      <div className="bg-yellow-400 py-2 text-center text-xs text-black">
-        ©Riyadatunnisa. Hak Cipta Dilindungi oleh undang-undang. |{" "}
-        <a href="#" className="underline">Powered by GoEnt</a>
-      </div>
+      <div className="bg-[#FFDD00] py-3 text-center text-xs text-black font-medium">
+      © 2025 PT Dahlia Global Indo. Seluruh hak cipta dilindungi undang-undang.
+    </div>
     </footer>
   );
 }

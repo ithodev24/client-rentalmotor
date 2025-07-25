@@ -11,6 +11,7 @@ export default function Navbar() {
 
   const navItems = [
     { label: 'Beranda', href: '/' },
+    { label: 'Artikel', href: '/artikel' },
     { label: 'Daftar Unit', href: '/DaftarUnit' },
     { label: 'Testimoni', href: '/Testimoni' },
     { label: 'Kontak', href: '/Kontak' },

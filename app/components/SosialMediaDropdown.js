@@ -31,32 +31,32 @@ const SosialMediaDropdown = () => {
 <div className="px-4 pb-4 pt-2 text-black space-y-4 text-sm">
   {/* Bandung */}
   <div>
-    <div className="font-semibold">Bandung</div>
+    <div className="font-semibold">Admin 1</div>
     <a
-      href="https://wa.me/6288010458655"
+      href="https://wa.me/6285724785060"
       target="_blank"
       className="inline-block bg-green-600 text-white px-4 py-2 rounded-full mt-1 text-sm"
     >
-      (+62) 088 0104 58655
+      (+62) 857-2478-5060
     </a>
   </div>
   <hr className="border-t border-green-400" />
 
   {/* Bali */}
   <div>
-    <div className="font-semibold">Bali</div>
+    <div className="font-semibold">Admin 2</div>
     <a
-      href="https://wa.me/6288010458655"
+      href="https://wa.me/62887825171899"
       target="_blank"
       className="inline-block bg-green-600 text-white px-4 py-2 rounded-full mt-1 text-sm"
     >
-      (+62) 088 0104 58655
+      (+62) 878-2517-1899
     </a>
   </div>
   <hr className="border-t border-green-400" />
 
   {/* Purwokerto */}
-  <div>
+  {/* <div>
     <div className="font-semibold">Purwokerto</div>
     <a
       href="https://wa.me/6288010458655"
@@ -66,10 +66,10 @@ const SosialMediaDropdown = () => {
       (+62) 088 0104 58655
     </a>
   </div>
-  <hr className="border-t border-green-400" />
+  <hr className="border-t border-green-400" /> */}
 
   {/* Malang */}
-  <div>
+  {/* <div>
     <div className="font-semibold">Malang</div>
     <a
       href="https://wa.me/6288010458655"
@@ -78,7 +78,7 @@ const SosialMediaDropdown = () => {
     >
       (+62) 088 0104 58655
     </a>
-  </div>
+  </div> */}
 </div>
 </div>
         </div>
@@ -101,10 +101,10 @@ const SosialMediaDropdown = () => {
         <div className={`transition-all duration-300 ease-in-out overflow-hidden ${activeDropdown === "tiktok" ? "max-h-[500px]" : "max-h-0"}`}>
           <div className="px-4 pb-4 pt-2 text-black space-y-4 text-sm">
             {[
-              { area: "Bandung", users: [{ handle: "@rentaldaybandung", link: "https://www.tiktok.com/@rentaldaybandung" }, { handle: "@rentalday.student", link: "https://www.tiktok.com/@rentalday.student" }] },
-              { area: "Bali", users: [{ handle: "@rentalday_", link: "https://www.tiktok.com/@rentalday_" }] },
-              { area: "Purwokerto", users: [{ handle: "@rentalday.pwt", link: "https://www.tiktok.com/@rentalday.pwt" }] },
-              { area: "Malang", users: [{ handle: "@rentaldaymlg", link: "https://www.tiktok.com/@rentaldaymlg" }] },
+              { area: "Bandung ( Mahasiswa )", users: [{ handle: "@rentalday.student", link: "https://www.tiktok.com/@rentalday.student?_t=ZS-8yJZ2827RqR&_r=1" }] },
+              { area: "Bandung Cabang 1", users: [{ handle: "@rentaldaybandung", link: "https://www.tiktok.com/@rentaldaybandung?_t=ZS-8yJYwPGwruJ&_r=1" }] },
+              { area: "Bandung Cabang 2", users: [{ handle: "@bandungrider", link: "https://www.tiktok.com/@bandungrider?_t=ZS-8yJYpA2TDbm&_r=1" }] },
+              
             ].map((region, index) => (
               <div key={index}>
                 {index > 0 && <hr className="border-t border-gray-300 my-2" />}
@@ -144,14 +144,15 @@ const SosialMediaDropdown = () => {
         <div className={`transition-all duration-300 ease-in-out overflow-hidden ${activeDropdown === "instagram" ? "max-h-[500px]" : "max-h-0"}`}>
           <div className="px-4 pb-4 pt-2 text-black space-y-4 text-sm">
             {[
-            { area: "Bandung", users: [
-              { handle: "@rentalday.student", link: "https://instagram.com/rentalday.student" },
-              { handle: "@rentalday.molis", link: "https://instagram.com/rentalday.molis" },
-              { handle: "@bandungrider.id", link: "https://instagram.com/bandungrider.id" }
-            ]},
-            { area: "Bali", users: [{ handle: "@balirider.id", link: "https://instagram.com/balirider.id" }] },
-            { area: "Purwokerto", users: [{ handle: "@rentalday.pwt", link: "https://instagram.com/rentalday.pwt" }] },
-            { area: "Malang", users: [{ handle: "@rentaldaymlg", link: "https://instagram.com/rentaldaymlg" }] },
+            // { area: "Bandung", users: [
+            //   { handle: "@rentalday.student", link: "https://instagram.com/rentalday.student" },
+            //   { handle: "@rentalday.molis", link: "https://instagram.com/rentalday.molis" },
+            //   { handle: "@bandungrider.id", link: "https://instagram.com/bandungrider.id" }
+            // ]},
+            { area: "Bandung ( Mahasiswa )", users: [{ handle: "@rentalday.student", link: "https://instagram.com/rentalday.student" }]},
+            { area: "Bandung Cabang 1", users: [{ handle: "@rentalday.id", link: "https://www.instagram.com/rentalday.id?igsh=ZzRzb3hybDNldDR3" }] },
+            { area: "Bandung Cabang 2", users: [{ handle: "@rentalday.molis", link: "https://www.instagram.com/rentalday.molis?igsh=a3ZqaDFkaWo5ZXFv" }] },
+            { area: "Malang", users: [{ handle: "@rentalday.pwt", link: "https://www.instagram.com/rentalday.pwt?igsh=aHd5Z3QyaXVtcXM2" }] },
           ].map((region, index) => (
             <div key={index}>
               {index > 0 && <hr className="border-t border-gray-300 my-2" />}
