@@ -35,15 +35,23 @@ export default function HomePage() {
           <Image
             src="/images/rentalmotor_bg.png"
             alt="Scooter Hero"
-            className="absolute inset-0 w-full h-full object-cover opacity-30"
+            fill
+            className="absolute inset-0 object-cover opacity-30 z-[-1]"
           />
           <div className="relative z-10 w-full flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto">
             <div className="w-full md:w-1/2 flex justify-cxenter md:justify-start mb-6 md:mb-0">
-              <Image
+              {/* <Image
                 src="/images/motor2+bayangan.png"
                 alt="Motor dengan Bayangan"
                 className="w-[200px] sm:w-[280px] md:w-[400px] lg:w-[500px]"
-              />
+              /> */}
+              <Image
+              src="/images/motor2+bayangan.png"
+              alt="Motor dengan Bayangan"
+              width={500} // ← bisa kamu sesuaikan
+              height={300} // ← sesuaikan juga dengan rasio gambarnya
+              className="w-[200px] sm:w-[280px] md:w-[400px] lg:w-[500px]"
+            />
             </div>
             <div className="w-full md:w-1/2 text-center md:text-right md:pr-28">
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold italic leading-tight">
@@ -81,11 +89,18 @@ export default function HomePage() {
               ].map(([icon, label], i) => (
                 <div key={i} className="flex items-center justify-center gap-2">
                   {/* ICON BENEFIT HERO SECTION */}
-                  <Image
+                  {/* <Image
                     src={`/images/${icon}`}
                     alt=""
                     className="w-10 h-10"
-                  />
+                  /> */}
+                  <Image
+                  src={`/images/${icon}`}
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="w-10 h-10"
+                />
                   <p className="text-sm md:text-base font-medium">{label}</p>
                 </div>
               ))}
@@ -184,9 +199,16 @@ export default function HomePage() {
               </p>
             </div>
             <div className="flex-1">
+              {/* <Image
+                src="/images/image1+border.png"
+                alt="Produk Motor"
+                className="w-full max-w-sm mx-auto drop-shadow-xl"
+              /> */}
               <Image
                 src="/images/image1+border.png"
                 alt="Produk Motor"
+                width={400}
+                height={400}
                 className="w-full max-w-sm mx-auto drop-shadow-xl"
               />
             </div>
@@ -220,7 +242,14 @@ export default function HomePage() {
                     key={i}
                      className="bg-white text-black p-3 rounded shadow flex items-center gap-3 h-[90px] w-full max-w-full sm:max-w-[480px]"
                   >
-                    <Image src={`/images/${icon}`} alt="" className="w-16 h-16 object-contain" />
+                    {/* <Image src={`/images/${icon}`} alt="" className="w-16 h-16 object-contain" /> */}
+                    <Image
+                      src={`/images/${icon}`}
+                      alt=""
+                      width={64}
+                      height={64}
+                      className="w-16 h-16 object-contain"
+                    />
                   <p className="text-base font-semibold sm:text-lg leading-snug">{text}</p>
                 </div>
                 ))}
@@ -237,7 +266,14 @@ export default function HomePage() {
                   key={i}
                   className="bg-white text-black p-3 rounded shadow flex items-center gap-3 h-[90px] w-full max-w-full sm:max-w-[480px]"
                 >
-                  <Image src={`/images/${icon}`} alt="" className="w-16 h-16 object-contain" />
+                  {/* <Image src={`/images/${icon}`} alt="" className="w-16 h-16 object-contain" /> */}
+                  <Image
+                    src={`/images/${icon}`}
+                    alt=""
+                    width={64}
+                    height={64}
+                    className="w-16 h-16 object-contain"
+                  />
                 <p className="text-base font-semibold sm:text-lg leading-snug">{text}</p>
               </div>
               ))}
@@ -269,14 +305,24 @@ export default function HomePage() {
               className="flex gap-6 w-max"
               style={{ animation: "scroll-loop 20s linear infinite" }}
             >
-              {[1, 2, 3, 4, 5, 1, 2, 3, 4, 5].map((n, i) => (
+              {/* {[1, 2, 3, 4, 5, 1, 2, 3, 4, 5].map((n, i) => (
                 <Image
                   key={i}
                   src={`/images/RD-motor${n}.png`}
                   alt={`Motor ${n}`}
                   className="h-20 sm:h-24 md:h-28 lg:h-36 w-auto"
                 />
-              ))}
+              ))} */}
+              {[1, 2, 3, 4, 5, 1, 2, 3, 4, 5].map((n, i) => (
+  <Image
+    key={i}
+    src={`/images/RD-motor${n}.png`}
+    alt={`Motor ${n}`}
+    width={200}      
+    height={150}     
+    className="h-20 sm:h-24 md:h-28 lg:h-36 w-auto"  
+  />
+))}
             </div>
           </div>
 

@@ -23,7 +23,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <Image src="/images/logo_rentalday.png" alt="Logo" className="w-8 h-8" />
+              <Image
+              src="/images/logo_rentalday.png"
+              alt="Logo"
+              width={32} // sesuai class w-8 = 32px
+              height={32}
+              className="w-8 h-8"
+            />
           <span className="text-black font-semibold text-lg">Rentalday</span>
         </div>
 

@@ -131,10 +131,12 @@ const Kontak = () => {
             {/* Ilustrasi */}
             <div className="flex justify-center items-end h-full md:h-[300px] mt-6 md:mt-0">
               <Image
-                src="/images/RD-kontakkami.png"
-                alt="Ilustrasi Kontak"
-                className="max-w-[220px] md:max-w-sm object-contain drop-shadow-lg"
-              />
+  src="/images/RD-kontakkami.png"
+  alt="Ilustrasi Kontak"
+  width={300} // <- tambahkan ukuran width
+  height={300} // <- tambahkan ukuran height
+  className="max-w-[220px] md:max-w-sm object-contain drop-shadow-lg"
+/>
             </div>
           </div>
         </section>
