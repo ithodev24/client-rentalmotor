@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import AnimatePage from "../components/AnimatePage";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -84,7 +85,7 @@ export default function Testimonials() {
                   <p className="text-sm text-gray-700 flex-1">
                     {testimonials[currentIndex].text}
                   </p>
-                  <img
+                  <Image
                     src="/images/logo_rentalday.png"
                     alt="Logo"
                     className="h-14 object-contain"
@@ -145,7 +146,7 @@ export default function Testimonials() {
                       <p className="text-sm text-gray-700 flex-1">
                         {item.text}
                       </p>
-                      <img
+                      <Image
                         src="/images/logo_rentalday.png"
                         alt="Logo"
                         className="h-14 object-contain"

@@ -2,6 +2,7 @@ import { units } from "../../../data/units";
 import BackButton from "../../components/BackButton";
 import Footer from "../../components/Footer";
 import AnimatePage from "@/app/components/AnimatePage";
+import Image from "next/image";
 
 export default function DetailUnit({ params }) {
   const unit = units.find((u) => u.id === parseInt(params.id));
@@ -36,7 +37,7 @@ export default function DetailUnit({ params }) {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-6 md:px-10 py-6 md:py-10 bg-white">
           <div className="flex justify-center items-center">
-            <img
+            <Image
               src={unit.image}
               alt={unit.name}
               className="w-full max-w-md object-contain"

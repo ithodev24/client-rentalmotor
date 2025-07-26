@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Link from "next/link";
 import AnimatePage from "../components/AnimatePage";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function Artikel() {
   const [articles, setArticles] = useState([]);
@@ -130,7 +131,7 @@ export default function Artikel() {
                 <Link href={`/artikel/${article.slug}`} key={article.id}>
                   <div className="bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 shadow-xl flex flex-col h-[320px]">
                     <div className="w-full h-40 relative overflow-hidden">
-                      <img
+                       <Image
                         src={`http://localhost:3333/${article.thumbnail}`}
                         alt={article.title}
                         className="w-full h-full object-cover absolute inset-0"

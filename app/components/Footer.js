@@ -1,17 +1,20 @@
 "use client";
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
     <footer className="relative bg-white text-black overflow-hidden">
       {/* Ornamen bunga kiri atas */}
-      <img
+      <Image
         src="/images/kontakkiri.png"
         alt="Flower Top Left"
         className="absolute top-[-58px] left-0 w-140 z-0"
       />
 
       {/* Ornamen bunga kanan bawah */}
-      <img
+      <Image
         src="/images/kontakkanan.png"
         alt="Flower Bottom Right"
         className="absolute bottom-0 right-0 w-100 mb-10 z-0"
@@ -23,33 +26,32 @@ export default function Footer() {
         <div className="flex flex-col items-start gap-6">
           {/* Ikon Media Sosial */}
           <div className="flex space-x-4">
-            {/* <a href="#"><img src="/images/icon_fb.png" alt="Facebook" className="w-7 h-7" /></a> */}
+            {/* <a href="#"><Image src="/images/icon_fb.png" alt="Facebook" className="w-7 h-7" /></a> */}
             {/* tiktok */}
-            <a
+            <Link
               href="https://www.tiktok.com/@bandungrider?_t=ZS-8yJWY2aXeWm&_r=1"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/images/icon_tt.png" alt="Instagram" className="w-8 h-8" />
-            </a>
+              <Image src="/images/icon_tt.png" alt="Instagram" className="w-8 h-8" />
+            </Link>
 
             {/* WhatsApp */}
-            <a
+            <Link
               href="https://wa.me/6285724785060"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/images/icon_wa.png" alt="WhatsApp" className="w-7 h-7" />
-            </a>
+              <Image src="/images/icon_wa.png" alt="WhatsApp" className="w-7 h-7" />
+            </Link>
           </div>
 
           {/* Logo Bank */}
-          {/* Logo Bank */}
         <div className="-ml-10 md:-ml-20 self-start bg-yellow-300 rounded-full px-6 py-2 shadow-md flex items-center space-x-6">
-            <img src="/images/pm_bni.png" alt="BNI" className="h-8" />
-            <img src="/images/pm_bca.png" alt="BCA" className="h-8" />
-            <img src="/images/pm_mandiri.png" alt="Mandiri" className="h-8" />
-            <img src="/images/pm_qris.png" alt="QRIS" className="h-8" />
+            <Image src="/images/pm_bni.png" alt="BNI" className="h-8" />
+            <Image src="/images/pm_bca.png" alt="BCA" className="h-8" />
+            <Image src="/images/pm_mandiri.png" alt="Mandiri" className="h-8" />
+            <Image src="/images/pm_qris.png" alt="QRIS" className="h-8" />
           </div>
         </div>
 
@@ -59,11 +61,11 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-gray-800 mb-2">Halaman</h4>
             <ul className="space-y-1">
-              <li><a href="/ " className="hover:text-yellow-500">Beranda</a></li>
-              <li><a href="/artikel" className="hover:text-yellow-500">Artikel</a></li>
-              <li><a href="/DaftarUnit" className="hover:text-yellow-500">Daftar Motor</a></li>
-              <li><a href="/Testimoni" className="hover:text-yellow-500">Testimoni</a></li>
-              <li><a href="/Kontak" className="hover:text-yellow-500">Kontak</a></li>
+              <li><Link href="/ " className="hover:text-yellow-500">Beranda</Link></li>
+              <li><Link href="/Linkrtikel" className="hover:text-yellow-500">Artikel</Link></li>
+              <li><Link href="/DaftarUnit" className="hover:text-yellow-500">Daftar Motor</Link></li>
+              <li><Link href="/Testimoni" className="hover:text-yellow-500">Testimoni</Link></li>
+              <li><Link href="/Kontak" className="hover:text-yellow-500">Kontak</Link></li>
             </ul>
           </div>
 
@@ -76,15 +78,15 @@ export default function Footer() {
               </a>
             </p>
             <p>
-              <a href="tel:+6285724785060" className="hover:text-yellow-500">
+              <Link href="tel:+6285724785060" className="hover:text-yellow-500">
                 (+62) 857-2478-5060
-              </a>
+              </Link>
             </p>
             <p className="text-xs text-gray-600">Admin 1</p>
             <p>
-              <a href="tel:+62887825171899" className="hover:text-yellow-500">
+              <Link href="tel:+62887825171899" className="hover:text-yellow-500">
                 (+62) 878-2517-1899
-              </a>
+              </Link>
             </p>
             <p className="text-xs text-gray-600">Admin 2</p>
           </div>
@@ -94,7 +96,7 @@ export default function Footer() {
         <div className="text-sm">
           <h4 className="font-semibold text-gray-800 mb-2">Alamat</h4>
           <p>
-            <a
+            <Link
               href="https://www.google.com/maps?q=Jl.+Kebon+Kawung+No.49,+Pasir+Kaliki,+Cicendo,+Bandung,+Jawa+Barat"
               target="_blank"
               rel="noopener noreferrer"
@@ -103,7 +105,7 @@ export default function Footer() {
               Jl. Kebon Kawung No.49, Pasir Kaliki,
               <br />
               Kec. Cicendo, Kota Bandung, Jawa Barat 40171, Indonesia
-            </a>
+            </Link>
           </p>
           
         </div>

@@ -4,6 +4,7 @@ import Link from "next/link";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import AnimatePage from "./components/AnimatePage";
+import Image from "next/image";
 
 function formatTanggalIndo(tanggalString) {
   const tanggal = new Date(tanggalString);
@@ -31,14 +32,14 @@ export default function HomePage() {
       <AnimatePage>
         {/* Hero Section */}
         <section className="relative bg-black text-white min-h-[600px] flex items-center px-4 md:px-10 py-10">
-          <img
+          <Image
             src="/images/rentalmotor_bg.png"
             alt="Scooter Hero"
             className="absolute inset-0 w-full h-full object-cover opacity-30"
           />
           <div className="relative z-10 w-full flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto">
             <div className="w-full md:w-1/2 flex justify-cxenter md:justify-start mb-6 md:mb-0">
-              <img
+              <Image
                 src="/images/motor2+bayangan.png"
                 alt="Motor dengan Bayangan"
                 className="w-[200px] sm:w-[280px] md:w-[400px] lg:w-[500px]"
@@ -54,18 +55,18 @@ export default function HomePage() {
                 layanan kami.
               </p>
               <div className="mt-6 flex justify-center md:justify-end gap-1 flex-wrap pb-18">
-                <a
+                <Link
                   href="/DaftarUnit"
                   className="bg-white text-red-600 px-6 py-2 rounded-l-full shadow hover:bg-gray-100"
                 >
                   Lihat Daftar Motor
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/Kontak"
                   className="bg-white text-red-600 px-6 py-2 rounded-r-full shadow hover:bg-gray-100"
                 >
                   Hubungi Kami
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -79,7 +80,12 @@ export default function HomePage() {
                 ["icon_truk.png", "Cash On Delivery"],
               ].map(([icon, label], i) => (
                 <div key={i} className="flex items-center justify-center gap-2">
-                  <img src={`/images/${icon}`} className="w-10 h-10" />
+                  {/* ICON BENEFIT HERO SECTION */}
+                  <Image
+                    src={`/images/${icon}`}
+                    alt=""
+                    className="w-10 h-10"
+                  />
                   <p className="text-sm md:text-base font-medium">{label}</p>
                 </div>
               ))}
@@ -94,7 +100,7 @@ export default function HomePage() {
     {articles[0] && (
       <div className="bg-white rounded-xl shadow-lg w-full lg:w-[2100px] h-auto lg:h-[500px] overflow-hidden">
         <div className="w-full h-64 lg:h-80 relative">
-          <img
+          <Image
             src={`http://localhost:3333/${articles[0].thumbnail}`}
             alt={articles[0].title}
             className="w-full h-full object-cover"
@@ -128,7 +134,7 @@ export default function HomePage() {
               className="bg-white rounded-xl overflow-hidden shadow-lg flex flex-col w-full"
             >
               <div className="w-full h-64 lg:h-30 relative">
-                <img
+                <Image
                   src={`http://localhost:3333/${item.thumbnail}`}
                   alt={item.title}
                   className="w-full h-full object-cover"
@@ -178,7 +184,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="flex-1">
-              <img
+              <Image
                 src="/images/image1+border.png"
                 alt="Produk Motor"
                 className="w-full max-w-sm mx-auto drop-shadow-xl"
@@ -214,7 +220,7 @@ export default function HomePage() {
                     key={i}
                      className="bg-white text-black p-3 rounded shadow flex items-center gap-3 h-[90px] w-full max-w-full sm:max-w-[480px]"
                   >
-                    <img src={`/images/${icon}`} className="w-16 h-16 object-contain" />
+                    <Image src={`/images/${icon}`} alt="" className="w-16 h-16 object-contain" />
                   <p className="text-base font-semibold sm:text-lg leading-snug">{text}</p>
                 </div>
                 ))}
@@ -231,7 +237,7 @@ export default function HomePage() {
                   key={i}
                   className="bg-white text-black p-3 rounded shadow flex items-center gap-3 h-[90px] w-full max-w-full sm:max-w-[480px]"
                 >
-                  <img src={`/images/${icon}`} className="w-16 h-16 object-contain" />
+                  <Image src={`/images/${icon}`} alt="" className="w-16 h-16 object-contain" />
                 <p className="text-base font-semibold sm:text-lg leading-snug">{text}</p>
               </div>
               ))}
@@ -264,7 +270,7 @@ export default function HomePage() {
               style={{ animation: "scroll-loop 20s linear infinite" }}
             >
               {[1, 2, 3, 4, 5, 1, 2, 3, 4, 5].map((n, i) => (
-                <img
+                <Image
                   key={i}
                   src={`/images/RD-motor${n}.png`}
                   alt={`Motor ${n}`}
@@ -274,12 +280,12 @@ export default function HomePage() {
             </div>
           </div>
 
-          <a
+          <Link
             href="/DaftarUnit"
             className="bg-white text-red-600 px-6 py-3 rounded-full shadow hover:bg-gray-100 text-sm font-semibold"
           >
             Lihat Daftar Motor Rentalday
-          </a>
+          </Link>
         </section>
 
         <Footer />
