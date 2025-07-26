@@ -14,7 +14,7 @@ const testimonials = [
     text: "Motornya nyaman banget, dapet fasilitas keamanan juga. Untuk pengambilan motor bisa diantar sesuai dengan alamat persetujuan, mantap.",
   },
   {
-    name: "Rudi Jonh",
+    name: "Ayu Nadya",
     role: "Wisatawan",
     video: "/videos/Trevo - Aplikasi Rental Mobil.mp4",
     text: "Pelayanan sangat memuaskan, motor dalam kondisi prima dan proses sewa mudah sekali. Akan sewa lagi next time!",
