@@ -37,7 +37,14 @@ export default function DaftarUnit() {
   const handlePrev = () => currentPage > 1 && setCurrentPage(currentPage - 1);
   const handleNext = () => currentPage < totalPages && setCurrentPage(currentPage + 1);
 
-  const getOptions = (key) => [...new Set(units.map((u) => u[key]))];
+  // ✅ Diperbaiki: harga diurut dari terendah
+  const getOptions = (key) => {
+    const uniqueValues = [...new Set(units.map((u) => u[key]))];
+    if (key === "harga") {
+      return uniqueValues.sort((a, b) => parseInt(a) - parseInt(b));
+    }
+    return uniqueValues;
+  };
 
   return (
     <div className="bg-white min-h-screen">

@@ -34,24 +34,38 @@ const SosialMediaDropdown = () => {
             <div>
               <div className="font-semibold">Admin 1</div>
               <Link
-                href="https://wa.me/6285724785060"
-                target="_blank"
-                className="inline-block bg-green-600 text-white px-4 py-2 rounded-full mt-1 text-sm"
-              >
-                (+62) 857-2478-5060
-              </Link>
+              href="https://wa.me/6285724785060"
+              target="_blank"
+              className="inline-block bg-green-600 text-white px-4 py-2 rounded-full mt-1 text-sm"
+            >
+              (+62) 857-2478-5060
+            </Link>
+
             </div>
             <hr className="border-t border-green-400" />
 
-            {/* Bali */}
+            {/* Bandung , Malang */}
             <div>
               <div className="font-semibold">Admin 2</div>
               <Link
-                href="https://wa.me/62887825171899"
+                href="https://wa.me/6287825171899"
                 target="_blank"
                 className="inline-block bg-green-600 text-white px-4 py-2 rounded-full mt-1 text-sm"
               >
                 (+62) 878-2517-1899
+              </Link>
+            </div>
+            <hr className="border-t border-green-400" />
+
+             {/* Bandung */}
+            <div>
+              <div className="font-semibold">Admin 3</div>
+              <Link
+                href="https://wa.me/6285136436020"
+                target="_blank"
+                className="inline-block bg-green-600 text-white px-4 py-2 rounded-full mt-1 text-sm"
+              >
+                (+62) 851-3643-6020
               </Link>
             </div>
             <hr className="border-t border-green-400" />

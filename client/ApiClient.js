@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:3333' // ip be
+const BASE_URL = 'https://backend.ptdahliaglobalindo.id:3333' // be
 
 export async function sendContactForm(data) {
   try {

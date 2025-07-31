@@ -3,6 +3,7 @@ import BackButton from "../../components/BackButton";
 import Footer from "../../components/Footer";
 import AnimatePage from "@/app/components/AnimatePage";
 import Image from "next/image";
+import { generateWhatsAppLink } from "@/data/adminContacts";
 
 export default function DetailUnit({ params }) {
   const unit = units.find((u) => u.id === parseInt(params.id));
@@ -17,9 +18,7 @@ export default function DetailUnit({ params }) {
           <BackButton />
         </div>
         <div className="px-6 md:px-10 py-6 md:py-10 bg-white">
-          <h2 className="text-xl md:text-2xl font-bold">
-            Unit tidak ditemukan
-          </h2>
+          <h2 className="text-xl md:text-2xl font-bold">Unit tidak ditemukan</h2>
         </div>
       </div>
     );
@@ -40,7 +39,10 @@ export default function DetailUnit({ params }) {
             <Image
               src={unit.image}
               alt={unit.name}
+              width={400}
+              height={300}
               className="w-full max-w-md object-contain"
+              priority={true}
             />
           </div>
           <div className="flex flex-col justify-center gap-4">
@@ -94,10 +96,9 @@ export default function DetailUnit({ params }) {
               </div>
             </div>
 
-            {/* Tombol Sewa */}
             <div className="pt-2">
               <a
-                href="https://wa.me/6285829764860"
+                href={generateWhatsAppLink(unit)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"
