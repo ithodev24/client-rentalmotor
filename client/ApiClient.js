@@ -1,4 +1,4 @@
-const BASE_URL = 'https://backend.ptdahliaglobalindo.id:3333' // be
+const BASE_URL = 'https://backend.ptdahliaglobalindo.id' // be
 
 export async function sendContactForm(data) {
   try {
