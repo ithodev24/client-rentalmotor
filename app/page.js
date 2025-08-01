@@ -19,7 +19,7 @@ export default function HomePage() {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3333/article")
+    fetch("https://backend.ptdahliaglobalindo.id:3333/article")
       .then((res) => res.json())
       .then((data) => {
         setArticles(data.slice(0, 3)); // Ambil 3 artikel pertama
@@ -35,11 +35,13 @@ export default function HomePage() {
           <Image
             src="/images/rentalmotor_bg.png"
             alt="Scooter Hero"
-            fill
-            className="absolute inset-0 object-cover opacity-30 z-[-1]"
+            layout="fill"
+            objectFit="cover"
+            className="opacity-30 -z-10"
           />
+
           <div className="relative z-10 w-full flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto">
-            <div className="w-full md:w-1/2 flex justify-cxenter md:justify-start mb-6 md:mb-0">
+            <div className="w-full md:w-1/2 flex justify-center md:justify-start mb-6 md:mb-0">
               {/* <Image
                 src="/images/motor2+bayangan.png"
                 alt="Motor dengan Bayangan"
@@ -79,6 +81,7 @@ export default function HomePage() {
             </div>
           </div>
 
+
           <div className="absolute bottom-0 left-0 w-full bg-black/80 text-white py-5 px-4 md:px-10 ">
             <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
               {[
@@ -116,7 +119,7 @@ export default function HomePage() {
       <div className="bg-white rounded-xl shadow-lg w-full lg:w-[2100px] h-auto lg:h-[500px] overflow-hidden">
         <div className="w-full h-64 lg:h-80 relative">
           <Image
-            src={`http://localhost:3333/${articles[0].thumbnail}`}
+            src={`https://backend.ptdahliaglobalindo.id:3333/${articles[0].thumbnail}`}
             alt={articles[0].title}
             className="w-full h-full object-cover"
           />
@@ -150,7 +153,7 @@ export default function HomePage() {
             >
               <div className="w-full h-64 lg:h-30 relative">
                 <Image
-                  src={`http://localhost:3333/${item.thumbnail}`}
+                  src={`https://backend.ptdahliaglobalindo.id:3333/${item.thumbnail}`}
                   alt={item.title}
                   className="w-full h-full object-cover"
                 />

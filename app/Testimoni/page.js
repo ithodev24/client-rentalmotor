@@ -11,19 +11,19 @@ const testimonials = [
   {
     name: "Riyadatunnisa",
     role: "Mahasiswi",
-    video: "/videos/Trevo - Aplikasi Rental Mobil.mp4",
+    video: "/videos/testimoni-rental-1.mp4",
     text: "Motornya nyaman banget, dapet fasilitas keamanan juga. Untuk pengambilan motor bisa diantar sesuai dengan alamat persetujuan, mantap.",
   },
   {
     name: "Ayu Nadya",
     role: "Wisatawan",
-    video: "/videos/Trevo - Aplikasi Rental Mobil.mp4",
+    video: "/videos/testimoni-rental-2.mp4",
     text: "Pelayanan sangat memuaskan, motor dalam kondisi prima dan proses sewa mudah sekali. Akan sewa lagi next time!",
   },
   {
     name: "Cahaya Insani",
     role: "Mahasiswi",
-    video: "/videos/Trevo - Aplikasi Rental Mobil.mp4",
+    video: "/videos/testimoni-rental-3.mp4",
     text: "Harga terjangkau untuk kualitas motor yang diberikan. Proses pengantaran cepat dan petugasnya ramah.",
   },
 ];
@@ -91,12 +91,12 @@ export default function Testimonials() {
                     className="h-14 object-contain"
                   /> */}
                   <Image
-  src="/images/logo_rentalday.png"
-  alt="Logo"
-  width={100} // kamu bisa ganti ukurannya
-  height={56} // sesuaikan juga, agar proporsional
-  className="h-14 object-contain"
-/>
+                    src="/images/logo_rentalday.png"
+                    alt="Logo"
+                    width={100} // kamu bisa ganti ukurannya
+                    height={56} // sesuaikan juga, agar proporsional
+                    className="h-14 object-contain"
+                  />
 
                 </div>
               </div>
@@ -160,14 +160,14 @@ export default function Testimonials() {
                         className="h-14 object-contain"
                       /> */}
                       <div className="relative w-24 h-14">
-<Image
-  src="/images/logo_rentalday.png"
-  alt="Logo"
-  width={100}
-  height={100}
-  className="h-14 object-contain"
-/>
-</div>
+                      <Image
+                        src="/images/logo_rentalday.png"
+                        alt="Logo"
+                        width={100}
+                        height={100}
+                        className="h-14 object-contain"
+                      />
+                      </div>
 
                     </div>
                   </div>

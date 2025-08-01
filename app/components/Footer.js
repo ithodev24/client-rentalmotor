@@ -57,40 +57,31 @@ export default function Footer() {
                 className="w-7 h-7"
               />
             </Link>
+            {/* Instagram */}
+              <Link
+                href="https://www.instagram.com/rentalday.id?igsh=ZzRzb3hybDNldDR3"
+                aria-label="Instagram"
+              >
+                <Image
+                  src="/images/icon_ig.png"
+                  alt="Instagram"
+                  width={24}
+                  height={24}
+                  className="w-6 h-6"
+                />
+              </Link>
           </div>
 
           {/* Logo Bank */}
-          <div className="-ml-10 md:-ml-20 self-start bg-yellow-300 rounded-full px-6 py-2 shadow-md flex items-center space-x-6">
-            <Image
-              src="/images/pm_bni.png"
-              alt="BNI"
-              width={60}
-              height={24}
-              className="h-8"
-            />
-            <Image
-              src="/images/pm_bca.png"
-              alt="BCA"
-              width={60}
-              height={24}
-              className="h-8"
-            />
-            <Image
-              src="/images/pm_mandiri.png"
-              alt="Mandiri"
-              width={60}
-              height={24}
-              className="h-8"
-            />
-            <Image
-              src="/images/pm_qris.png"
-              alt="QRIS"
-              width={60}
-              height={24}
-              className="h-8"
-            />
+          <div className="absolute bottom-24 left-0 bg-[#FFDD00] py-2 pr-4 pl-2 rounded-r-full flex items-start gap-4 shadow-md z-10">
+            <Image src="/images/pm_bni.png" alt="BNI" width={24} height={24} className="w-8 h-8 object-contain" />
+            <Image src="/images/pm_bca.png" alt="BCA" width={24} height={24} className="w-8 h-8 object-contain" />
+            <Image src="/images/pm_mandiri.png" alt="Mandiri" width={24} height={24} className="w-8 h-8 object-contain" />
+            <Image src="/images/pm_qris.png" alt="QRIS" width={24} height={24} className="w-8 h-8 object-contain" />
+            <Image src="/images/pm_mastercard.png" alt="Mastercard" width={24} height={24} className="w-8 h-8 object-contain" />
+            <Image src="/images/pm_visa.png" alt="Visa" width={24} height={24} className="w-8 h-8 object-contain" />
           </div>
-        </div>
+          </div>
 
         {/* Kolom 2: Halaman + Kontak */}
         <div className="grid grid-cols-2 gap-4 text-sm">
@@ -121,11 +112,17 @@ export default function Footer() {
             </p>
             <p className="text-xs text-gray-600">Admin 1</p>
             <p>
-              <Link href="tel:+62887825171899" className="hover:text-yellow-500">
+              <Link href="tel:+6287825171899" className="hover:text-yellow-500">
                 (+62) 878-2517-1899
               </Link>
             </p>
             <p className="text-xs text-gray-600">Admin 2</p>
+            <p>
+              <Link href="tel:+6285136436020" className="hover:text-yellow-500">
+                (+62) 851-3643-6020 
+              </Link>
+            </p>
+            <p className="text-xs text-gray-600">Admin 3</p>
           </div>
         </div>
 
