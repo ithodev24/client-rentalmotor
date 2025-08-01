@@ -55,7 +55,7 @@ export default function DetailUnit({ params }) {
             <hr className="my-2 border-black" />
             <div className="flex flex-wrap gap-2 text-xs md:text-sm">
               <span className="border border-yellow-500 px-4 md:px-10 py-1 rounded-full text-gray-800">
-                {unit.weight}
+                {unit.kapasitas}
               </span>
               <span className="border border-yellow-500 px-4 md:px-10 py-1 rounded-full text-gray-800">
                 {unit.daerah}
@@ -159,12 +159,7 @@ export default function DetailUnit({ params }) {
                     <td className="py-3 pr-4 font-semibold">Bahan Bakar</td>
                     <td className="py-3 text-right">{unit.fuel}</td>
                   </tr>
-                  <tr className="bg-gray-100">
-                    <td className="py-3 pr-4 font-semibold">
-                      Kapasitas Maksimal
-                    </td>
-                    <td className="py-3 text-right">{unit.maxCapacity}</td>
-                  </tr>
+                  
                 </tbody>
               </table>
             </div>

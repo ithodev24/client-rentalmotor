@@ -39,7 +39,7 @@ export const generateWhatsAppLink = (unit) => {
     const sanitizedName = unit.name.toString().trim().replace(/[^\w\s-]/g, '');
 
     // Format message as a single line to match ContactPage simplicity
-    const message = `Halo Admin, saya ingin sewa ${sanitizedName} di ${sanitizedDaerah}. Apakah tersedia?`;
+    const message = `Halo Admin ${sanitizedDaerah},\n\nSaya ingin menyewa unit ${sanitizedName} di ${sanitizedDaerah}.\nApakah unit tersebut masih tersedia? Terima kasih.`;
 
     // Log raw message for debugging
     console.log('Raw WhatsApp message:', message);
