@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['backend.ptdahliaglobalindo.id'],
+    domains: ["backend.ptdahliaglobalindo.id"],
   },
 };
 
